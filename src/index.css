@@ -1,0 +1,60 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Default theme fallback (purple dark) — overridden by ThemeContext on mount */
+:root {
+  --bg: #0a0a0f;
+  --surface: #12121a;
+  --surface2: #1a1a26;
+  --card: #16161f;
+  --accent: #7c6cfa;
+  --accent2: #fa6c9a;
+  --accent3: #6cfabd;
+  --text: #f0eeff;
+  --muted: #7a7a9a;
+  --border: rgba(124,108,250,0.18);
+  --orb1: #7c6cfa;
+  --orb2: #fa6c9a;
+  --orb3: #6cfabd;
+  --font-display: 'Syne', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 1.7;
+  overflow-x: hidden;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+
+/* Smooth CSS variable transitions on all elements */
+*, *::before, *::after {
+  transition:
+    background-color 0.35s ease,
+    border-color 0.35s ease,
+    color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease !important;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
