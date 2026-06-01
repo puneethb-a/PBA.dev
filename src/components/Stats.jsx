@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import styles from './Stats.module.css'
 
 const stats = [
-  { value: 3, suffix: '+', label: 'Projects Built' },
+  { value: 4, suffix: '+', label: 'Projects Built' },
   { value: 6, suffix: '+', label: 'Months Experience' },
   { value: 10, suffix: '+', label: 'Technologies' },
   { value: 1, suffix: '', label: 'Internship' },

@@ -29,6 +29,8 @@ const skills = [
       { label: 'Hibernate', color: 'pink' },
       { label: 'JDBC', color: 'pink' },
       { label: 'REST APIs', color: 'pink' },
+      { label: 'SQLAlchemy', color: 'pink' },
+      { label: 'Firebase', color: 'pink' },
     ],
   },
   {
@@ -57,8 +59,10 @@ const skills = [
     tags: [
       { label: 'LangChain', color: 'green' },
       { label: 'CrewAI', color: 'green' },
+      { label: 'Groq LLM', color: 'green' },
       { label: 'LLMs', color: 'green' },
       { label: 'AI Agents', color: 'green' },
+      
     ],
   },
 ]
